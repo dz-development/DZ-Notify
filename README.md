@@ -1,9 +1,9 @@
 # DZ-Notify
-How to add DZ-Notify to any of your existing fivem scripts
+How to add DZ-Notify to your existing FiveM scripts.
 
-The name of the Resource **MUST** stay as 'DZ-Notify'
+The resource name **must** stay as `DZ-Notify`.
 
-# Exports
+## Exports
 ```lua
 local function Notify(msg, type)
     if type == 'success' then
@@ -16,9 +16,9 @@ local function Notify(msg, type)
 end
 ```
 
-# Useage in other scripts
+# Usage in other scripts
 ```lua
-Notify('Vehicle spawned', 'success')
-Notify('Vehicle despawned', 'error')
-Notify('You are now in the car', 'alert')
+Notify('Action completed successfully', 'success')
+Notify('Action failed', 'error')
+Notify('You cannot do this here', 'alert')
 ```
